@@ -1,0 +1,13 @@
+D:\POS\POS_STAFF\obj\Debug\POS_STAFF.Form1.resources
+D:\POS\POS_STAFF\obj\Debug\POS_STAFF.Properties.Resources.resources
+D:\POS\POS_STAFF\obj\Debug\POS_STAFF.View.POS.resources
+D:\POS\POS_STAFF\obj\Debug\POS_STAFF.View.Forms.PrintCode.resources
+D:\POS\POS_STAFF\obj\Debug\POS_STAFF.csproj.GenerateResource.cache
+D:\POS\POS_STAFF\obj\Debug\POS_STAFF.csproj.CoreCompileInputs.cache
+D:\POS\POS_STAFF\bin\Debug\POS_STAFF.exe.config
+D:\POS\POS_STAFF\bin\Debug\POS_STAFF.exe
+D:\POS\POS_STAFF\bin\Debug\POS_STAFF.pdb
+D:\POS\POS_STAFF\bin\Debug\MaterialSkin.dll
+D:\POS\POS_STAFF\obj\Debug\POS_STAFF.csproj.CopyComplete
+D:\POS\POS_STAFF\obj\Debug\POS_STAFF.exe
+D:\POS\POS_STAFF\obj\Debug\POS_STAFF.pdb

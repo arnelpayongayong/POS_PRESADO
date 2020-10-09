@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS", "POS\POS.csproj", "{4BDDEA19-7935-4392-A77D-595BA5721C41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS_STAFF", "POS_STAFF\POS_STAFF.csproj", "{C38325A9-777D-41D5-87AC-AAE305B36CC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BDDEA19-7935-4392-A77D-595BA5721C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDDEA19-7935-4392-A77D-595BA5721C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDDEA19-7935-4392-A77D-595BA5721C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDDEA19-7935-4392-A77D-595BA5721C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C38325A9-777D-41D5-87AC-AAE305B36CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38325A9-777D-41D5-87AC-AAE305B36CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38325A9-777D-41D5-87AC-AAE305B36CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38325A9-777D-41D5-87AC-AAE305B36CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD1964A7-4F30-4CBB-A81C-BA9DD2194258}
+	EndGlobalSection
+EndGlobal
