@@ -12,9 +12,9 @@ namespace POS.Model
         public string productCode { get; set; }
         public string productName { get; set; }
         public int productQuantity { get; set; }
-        public float productPrice { get; set; }
+        public double productPrice { get; set; }
         public string productUnit { get; set; }
-        public float productUnitValue { get; set; }
+        public double productUnitValue { get; set; }
         public DateTime productExpirationDate { get; set; }
         public int productMinimunQuantity { get; set; }
 

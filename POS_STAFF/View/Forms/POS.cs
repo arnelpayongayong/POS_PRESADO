@@ -37,28 +37,32 @@ namespace POS_STAFF.View
         {
            string[][] listViewColumns = new string[][]
           {
-                new string[] {"Product Code","300" },
-                new string[] {"Product Name","200" },
-                new string[] {"Product Price","300" },
-                new string[] {"Product Unit","200" },
-                new string[] {"Category","200" },
+                new string[] {"Code","300" },
+                new string[] {"Name","260" },
+                new string[] {"Price","100" },
+                new string[] {"Unit","100" },
+                new string[] {"Category","300" },
           };
 
             UtilitiesController.InitializeListView(lsvProducts, listViewColumns);
+            lsvProducts.GridLines = false;
+            lsvPendingOrder.Font = new Font("Century Gothic", 10);
         }
 
         private void InitializeListViewPending()
         {
             string[][] listViewColumns = new string[][]
            {
-                new string[] {"Code","100" },
-                new string[] {"Name","100" },
-                new string[] {"Price","100" },
+                new string[] {"Code","120" },
+                new string[] {"Name","150" },
+                new string[] {"Price","50" },
                 new string[] {"Quantity","100" },
-                new string[] {"Category","100" },
+                new string[] {"Category","150" },
            };
 
             UtilitiesController.InitializeListView(lsvPendingOrder, listViewColumns);
+            lsvPendingOrder.GridLines = false;
+            lsvPendingOrder.Font = new Font("Century Gothic", 10);
         }
 
         private void PopulateListView()
@@ -74,10 +78,10 @@ namespace POS_STAFF.View
             foreach (var p in pendingOrder)
             {
                 item = lsvPendingOrder.Items.Add(p.productCode);
-                item.SubItems.Add(p.productName);
+                item.SubItems.Add(p.productName.ToUpper());
                 item.SubItems.Add(p.productPrice.ToString());
                 item.SubItems.Add(p.productQuantity.ToString());
-                item.SubItems.Add(p.productCategory.name);
+                item.SubItems.Add(p.productCategory.name.ToUpper());
             }
         }
 
@@ -90,10 +94,10 @@ namespace POS_STAFF.View
             foreach(var p in products)
             {
                 item = lsvProducts.Items.Add(p.productCode);
-                item.SubItems.Add(p.productName);
+                item.SubItems.Add(p.productName.ToUpper());
                 item.SubItems.Add(p.productPrice.ToString());
-                item.SubItems.Add(p.productUnitValue + " " + p.productUnit);
-                item.SubItems.Add(p.productCategory.name);
+                item.SubItems.Add(p.productUnitValue + " " + p.productUnit.ToUpper());
+                item.SubItems.Add(p.productCategory.name.ToUpper());
             }
         }
 
@@ -212,5 +216,13 @@ namespace POS_STAFF.View
                 OrderListController.Create(orderList);
             }
         }
+
+        private void lsvPendingOrder_DrawColumnHeader(object sender, DrawListViewColumnHeaderEventArgs e)
+        {
+            e.Graphics.FillRectangle(Brushes.Red, e.Bounds);
+            e.DrawText();
+        }
+
+
     }
 }

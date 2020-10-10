@@ -11,3 +11,4 @@ D:\POS\POS_STAFF\bin\Debug\MaterialSkin.dll
 D:\POS\POS_STAFF\obj\Debug\POS_STAFF.csproj.CopyComplete
 D:\POS\POS_STAFF\obj\Debug\POS_STAFF.exe
 D:\POS\POS_STAFF\obj\Debug\POS_STAFF.pdb
+D:\POS\POS_STAFF\obj\Debug\POS_STAFF.csprojAssemblyReference.cache

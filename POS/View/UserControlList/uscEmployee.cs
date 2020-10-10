@@ -90,7 +90,7 @@ namespace POS.View.UserControlList
             string message = "Do you really want to delete " + users[selectedIndex].lastname;
 
             if(MessageBox.Show(message, "Warning", MessageBoxButtons.OKCancel) == DialogResult.OK )
-                UserController.Delete(selectedIndex);
+                UserController.Delete(users[selectedIndex].id);
 
             PopulateList();
             UpdateListView();

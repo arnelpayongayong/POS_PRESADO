@@ -49,9 +49,9 @@
             // lsvEmployee
             // 
             this.lsvEmployee.HideSelection = false;
-            this.lsvEmployee.Location = new System.Drawing.Point(36, 154);
+            this.lsvEmployee.Location = new System.Drawing.Point(27, 115);
             this.lsvEmployee.Name = "lsvEmployee";
-            this.lsvEmployee.Size = new System.Drawing.Size(1001, 544);
+            this.lsvEmployee.Size = new System.Drawing.Size(1540, 861);
             this.lsvEmployee.TabIndex = 1;
             this.lsvEmployee.UseCompatibleStateImageBehavior = false;
             // 
@@ -62,7 +62,7 @@
             this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNew.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNew.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnNew.Location = new System.Drawing.Point(36, 704);
+            this.btnNew.Location = new System.Drawing.Point(27, 1018);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(133, 49);
             this.btnNew.TabIndex = 2;
@@ -77,7 +77,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDelete.Location = new System.Drawing.Point(314, 704);
+            this.btnDelete.Location = new System.Drawing.Point(305, 1018);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(133, 49);
             this.btnDelete.TabIndex = 3;
@@ -92,7 +92,7 @@
             this.btnAssignedHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAssignedHistory.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAssignedHistory.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAssignedHistory.Location = new System.Drawing.Point(766, 704);
+            this.btnAssignedHistory.Location = new System.Drawing.Point(1296, 1018);
             this.btnAssignedHistory.Name = "btnAssignedHistory";
             this.btnAssignedHistory.Size = new System.Drawing.Size(271, 49);
             this.btnAssignedHistory.TabIndex = 4;
@@ -107,7 +107,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnUpdate.Location = new System.Drawing.Point(175, 704);
+            this.btnUpdate.Location = new System.Drawing.Point(166, 1018);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(133, 49);
             this.btnUpdate.TabIndex = 5;
@@ -126,7 +126,7 @@
             this.Controls.Add(this.lsvEmployee);
             this.Controls.Add(this.label1);
             this.Name = "uscEmployee";
-            this.Size = new System.Drawing.Size(1072, 768);
+            this.Size = new System.Drawing.Size(1595, 1079);
             this.Load += new System.EventHandler(this.uscEmployee_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -36,6 +36,22 @@ namespace POS.Controller
             }
         }
 
+        public static void UpdateProductQuantity(Product product)
+        {
+            using (DAL dal = new DAL())
+            {
+                SqlParameter[] spParams = {
+                        new SqlParameter("@id",product.productID),
+                        new SqlParameter("@quantity",product.productQuantity)       
+                    };
+
+
+                dal.ExecuteQueryScalar("spUpdateProductQuantity", spParams);
+
+                return;
+            }
+        }
+
         public static List<Model.Product> ProductList()
         {
             List<Model.Product> products = null; ;
@@ -57,7 +73,19 @@ namespace POS.Controller
                         productQuantity = dr.Field<int>("quantity"),
                         productPrice = (float)dr.Field<double>("price"),
                         productUnit = dr.Field<string>("unit").ToLower(),
-                        productCode = dr.Field<string>("code")
+                        productUnitValue = dr.Field<double>("unitValue"),
+                        productCode = dr.Field<string>("code"),
+                        productExpirationDate = dr.Field<DateTime>("expirationDate"),
+                        productCategory = new Category()
+                        {
+                            id = dr.Field<int>("categoryID"),
+                            name = dr.Field<string>("categoryName")
+                        },
+                        productDistributor = new Distributor()
+                        {
+                            id = dr.Field<int>("distributorID"),
+                            name = dr.Field<string>("distributorName")
+                        }
                     });
                 }
 

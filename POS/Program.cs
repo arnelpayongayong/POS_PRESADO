@@ -16,7 +16,7 @@ namespace POS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new View.Forms.frmTransaction());
+            Application.Run(new mainForm());
         }
     }
 }

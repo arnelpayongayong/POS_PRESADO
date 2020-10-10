@@ -18,7 +18,7 @@ namespace POS.Controller
             {
                 SqlParameter[] spParams =
                 {
-                        new SqlParameter("@username",user.firstname),
+                        new SqlParameter("@username",user.username),
                         new SqlParameter("@password",user.middlename),
                         new SqlParameter("@firstname",user.firstname),
                         new SqlParameter("@middlename",user.middlename),

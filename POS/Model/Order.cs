@@ -13,6 +13,9 @@ namespace POS.Model
         public int status { get; set; }
         public double totalPrice { get; set; }
         public string transactionCode { get; set; }
+        public double change { get; set; }
+        public double payment { get; set; }
+        public double discount { get; set; }
 
 
         public string Status(int status)

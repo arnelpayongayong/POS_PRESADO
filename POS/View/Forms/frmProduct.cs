@@ -127,6 +127,8 @@ namespace POS.View.Forms
         private void btnAdd_Click(object sender, EventArgs e)
         {
             new frmNewSupplier().ShowDialog();
+            PopulateList();
+            PopulateSupplierComboBox();
         }
 
         private void PopulateList()
@@ -161,6 +163,7 @@ namespace POS.View.Forms
         private void btnSave_Click(object sender, EventArgs e)
         {
             SaveProducts();
+            this.DialogResult = System.Windows.Forms.DialogResult.OK;
         }
         
         private int ValidateSaving(string category)

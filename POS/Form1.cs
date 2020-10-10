@@ -45,5 +45,10 @@ namespace POS
             panelControl.Controls.Clear();
             panelControl.Controls.Add(new uscEmployee());
         }
+
+        private void btnTransaction_Click(object sender, EventArgs e)
+        {
+            new View.Forms.frmTransaction().ShowDialog();
+        }
     }
 }

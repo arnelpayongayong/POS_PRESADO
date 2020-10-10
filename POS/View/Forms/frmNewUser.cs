@@ -27,6 +27,8 @@ namespace POS.View.Forms
 
         private void FillUp()
         {
+            if (user == null) return;
+
             txtFirstname.Text = user.firstname;
             txtMiddlename.Text = user.middlename;
             txtLastname.Text = user.lastname;
@@ -69,7 +71,7 @@ namespace POS.View.Forms
         {
             try
             {
-                if (user == null)
+                if (user.id == 0)
                 {
                     
                     UserController.Create(user);
